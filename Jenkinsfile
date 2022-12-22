@@ -8,7 +8,7 @@ pipeline {
         }
         stage('building Image') {    
             steps {
-               sh 'docker build . --no-cache -t shazebali7/php:v1'
+               sh 'docker build --no-cache -t shazebali7/php:v1 .'
             }
         }
         stage('pushing image to hub') { 
